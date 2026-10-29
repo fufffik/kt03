@@ -1,0 +1,23 @@
+{
+  "name": "kt03",
+  "version": "1.0.0",
+  "description": "REST API блог-платформы (Express + Prisma + SQLite)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:studio": "prisma studio"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "joi": "^17.13.9"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.3"
+  }
+}
